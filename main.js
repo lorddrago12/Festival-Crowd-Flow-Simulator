@@ -33,3 +33,9 @@ function processGateFlow(gate, tickIndex) {
   };
 }
 
+function rerouteOverflow(gates, currentGate, tickIndex, overflowAmount) {
+  const currentIndex = gates.indexOf(currentGate);
+  const nextGateIndex = (currentIndex + 1) % gates.length;
+  gates[nextGateIndex].queue[tickIndex] += overflowAmount;
+
+}
