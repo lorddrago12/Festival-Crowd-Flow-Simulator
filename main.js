@@ -61,5 +61,17 @@ function handleGateAtTick(gates, gate, tickIndex, throughputSummary) {
 
 function printSummary(summary) {
   console.log("\nThroughput Summary");
+  for (const gateId in summary) {
+    console.log(
+      gateId + ": " + summary[gateId] +
+      " attendees processed"
+    );
+  }
+}
+
+function simulateFestival(gates, timeBlock) {
+  console.log("\n" + timeBlock + " Simulation");
+  const throughputSummary = initializeThroughput(gates);
+  const maxTicks = gates[0].queue.length;
 
 }
