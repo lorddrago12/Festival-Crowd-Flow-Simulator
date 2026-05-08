@@ -36,7 +36,7 @@ cd festival-crowd-flow-simulator
 ### Run the Simulation
 
 ```bash
-node simulator.js
+node main.js
 ```
 
 ---
@@ -45,7 +45,7 @@ node simulator.js
 
 ```
 festival-crowd-flow-simulator/
-├── simulator.js   # Core simulation logic and gate data
+├── main.js   # Core simulation logic and gate data
 └── README.md
 ```
 
